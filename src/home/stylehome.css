@@ -1,0 +1,33 @@
+.mydiv1::after{
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 1%;
+    background: green;
+    top: 0;
+    left: 0;
+}
+.mydiv1{
+    position: relative;
+    box-shadow: 8px 10px 43px -4px
+}
+
+.navlink2::-webkit-scrollbar{
+    width: 10px !important;
+}
+
+.navlink1::-webkit-scrollbar-thumb{
+    background: green !important;
+    border-radius: 10px;
+}
+
+.modellist:hover{
+    cursor: pointer;
+    color: green;
+  margin-left: 30px;
+    transition: 0.5s;
+}
+
+.mydiv2{
+    cursor: pointer;
+}

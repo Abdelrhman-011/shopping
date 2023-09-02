@@ -87,7 +87,7 @@ const Login = () => {
           <Button variant="success" type="submit" className="me-3 mb-3">
             Sign in
           </Button>
-          <Button variant="success" as={Link} to="/signup">
+          <Button variant="success" className="mb-3" as={Link} to="/signup">
             Sign up
           </Button>
         </div>

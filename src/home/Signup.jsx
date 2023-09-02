@@ -69,7 +69,7 @@ const Signup = () => {
     }
   };
   return (
-    <div className="container mt-5" style={{ height: "75vh" }}>
+    <div className="container mt-5" style={{ height: "90vh" }}>
       <form onSubmit={handalform}>
         <div className="d-flex justify-content-lg-around flex-lg-row justify-content-md-around flex-md-row flex-column align-items-center mb-3">
           <div className="d-flex flex-column w-100 me-lg-5 me-md-5">

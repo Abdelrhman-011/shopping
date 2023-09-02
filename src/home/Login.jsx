@@ -74,7 +74,7 @@ const Login = () => {
           )}
 
           <input
-            type={showpass ? "password" : "number"}
+            type={showpass ? "password" : "text"}
             className="w-100"
             value={password}
             onChange={(e) => setpassword(e.target.value)}
@@ -83,8 +83,8 @@ const Login = () => {
         <div>
           {errpassword && <p className="text-danger">invalied password</p>}
         </div>
-        <div className="container mt-3">
-          <Button variant="success" type="submit" className="me-3">
+        <div className="container mt-3 d-flex justify-content-between flex-wrap">
+          <Button variant="success" type="submit" className="me-3 mb-3">
             Sign in
           </Button>
           <Button variant="success" as={Link} to="/signup">

@@ -72,11 +72,12 @@ const Home = () => {
               <div key={e.id} className="col-lg-3 col-md-4 col-6 mb-3 ">
                 <Card
                   className="position-relative mydiv2 text-decoration-none"
+                  style={{ height: "100%" }}
                   as={Link}
                   to={`/category/product/details/${e.id}`}
                 >
                   <Card.Img variant="top" src={e.thumbnail} />
-                  <Card.Body>
+                  <Card.Body className="">
                     <Card.Text className="text-center">
                       <span className="text-secondary">Brand: </span>
                       {e.brand}

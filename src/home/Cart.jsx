@@ -15,7 +15,6 @@ import { MdDeleteSweep } from "react-icons/md";
 const Cart = () => {
   const { carts, product } = useSelector((e) => e.productDetails);
   const disbatch = useDispatch();
-  console.log(carts);
 
   return (
     <div>
@@ -27,7 +26,7 @@ const Cart = () => {
           </Button>
         </div>
       ) : (
-        <div className=" vh-100 container mt-5 ">
+        <div className=" container  mt-5 " style={{ marginBottom: "100%" }}>
           <Table responsive>
             <thead>
               <tr>

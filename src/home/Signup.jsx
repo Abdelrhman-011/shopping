@@ -17,7 +17,6 @@ const Signup = () => {
   const [errage, seterrage] = useState(false);
   const navgaitly = useNavigate();
 
-  console.log(localStorage.user);
   const handalform = (e) => {
     e.preventDefault();
     if (firstname === "" || firstname === " ") {

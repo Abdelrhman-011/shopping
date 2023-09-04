@@ -79,29 +79,30 @@ const Header = () => {
           </div>
         </div>
         <div className="w-100 bg-light" style={{ height: "1px" }}></div>
+        <Offcanvas show={show} onHide={handleClose}>
+          <Offcanvas.Header closeButton>
+            <Offcanvas.Title>All Categories</Offcanvas.Title>
+          </Offcanvas.Header>
+          <Offcanvas.Body className="navlink2 navlink1 position-relative">
+            <div>
+              {categoriesaData.map((e, y) => (
+                <Nav.Link key={y} as={Link} to={`/category/${e}`}>
+                  <div>
+                    <p className="modellist">{e}</p>
+                    <hr />
+                  </div>
+                </Nav.Link>
+              ))}
+            </div>
+          </Offcanvas.Body>
+        </Offcanvas>
         <Navbar expand="lg">
           <Navbar.Brand className="text-light d-flex justfiy-content-center align-items-center">
             <AiOutlineBars
               onClick={handleShow}
               className="text-light fs-4 me-2"
+              style={{ cursor: "pointer" }}
             />
-            <Offcanvas show={show} onHide={handleClose}>
-              <Offcanvas.Header closeButton>
-                <Offcanvas.Title>All Categories</Offcanvas.Title>
-              </Offcanvas.Header>
-              <Offcanvas.Body className="navlink2 navlink1 position-relative">
-                <div>
-                  {categoriesaData.map((e, y) => (
-                    <Nav.Link key={y} as={Link} to={`/category/${e}`}>
-                      <div>
-                        <p className="modellist">{e}</p>
-                        <hr />
-                      </div>
-                    </Nav.Link>
-                  ))}
-                </div>
-              </Offcanvas.Body>
-            </Offcanvas>
             <Nav.Link as={Link} to="/">
               <BiSolidShoppingBag /> <span className="fw-bold">Goo</span>
               Web.
